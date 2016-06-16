@@ -1,0 +1,119 @@
+:root {
+    font-size: 16px;
+}
+
+
+//Testing comment
+$icon-font-path: '../fonts/';
+$icomoon-font-path: '../fonts/';
+
+@import "variables";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "node_modules/id-icons/style.scss";
+
+@import "fonts";
+@import "type";
+
+// Alerts
+.alert {
+    border: none;
+    border-left: 3px solid;
+    position: relative;
+    padding-left: 49px;
+
+    &:before {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        font-family: 'id-icons' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 24px;
+        font-size: 24px;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    &.alert-success {
+        &:before {
+            content: "\e610";
+        }
+    }
+
+    &.alert-info {
+        &:before {
+            content: "\e62c";
+        }
+    }
+
+    &.alert-warning {
+        &:before {
+            content: $icon-warning;
+        }
+    }
+
+    &.alert-danger {
+        &:before {
+            content: "\e638";
+        }
+    }
+}
+
+// Site header
+.site-header {
+    background: $gray-lighter;
+    height: 35px;
+}
+
+.site-header__product-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__product {
+        float: left;
+
+        a {
+            display: block;
+            float: left;
+            height: 35px;
+            text-decoration: none;
+            padding: 0 1em;
+            line-height: 35px;
+            color: #fff;
+        }
+
+        &--profile a { background: $brand-profile }
+        &--atlas a { background: $brand-atlas }
+        &--forecast a { background: $brand-forecast }
+        &--economy a { background: $brand-economy }
+    }
+}
+
+@mixin icon-style() {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'id-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 0;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    @include icon-style;
+}

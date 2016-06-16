@@ -1,0 +1,29 @@
+colors:
+  primary:
+    .id orange: "brand-id"
+  grays:
+    Gray base: "gray-base"
+    Gray darker: "gray-darker"
+    Gray dark: "gray-dark"
+    Gray: "gray"
+    Gray light: "gray-light"
+    Gray lighter: "gray-lighter"
+  products:
+    Profile: "brand-profile"
+    Profile dark: "brand-profile-dark"
+    Forecast: "brand-forecast"
+    Forecast dark: "brand-forecast-dark"
+    Atlas: "brand-atlas"
+    Atlas dark: "brand-atlas-dark"
+    Economy: "brand-economy"
+    Economy dark: "brand-economy-dark"
+    Housing: "brand-housing"
+    Housing dark: "brand-housing-dark"
+    Health: "brand-health"
+    Health dark: "brand-health-dark"
+  utility:
+    Info: "brand-info"
+    Success: "brand-success"
+    Warning: "brand-warning"
+    Danger: "brand-danger"
+

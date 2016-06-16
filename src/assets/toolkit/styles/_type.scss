@@ -1,0 +1,111 @@
+//
+// Typography
+// --------------------------------------------------
+body {
+    letter-spacing: $letter-spacing-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: underline;
+}
+
+th {
+    color: $headings-color;
+}
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    letter-spacing: $letter-spacing-narrow;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    margin-top: $font-size-base * 2;
+    margin-bottom: $font-size-base;
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: $font-size-base;
+    margin-bottom: $font-size-base;
+}
+
+
+// Body text
+// -------------------------
+
+p {
+    margin: 0 0 $font-size-base;
+}
+
+.lead {
+    margin-bottom: $font-size-base;
+    font-family: $font-family-condensed;
+    font-weight: normal;
+
+    em {
+        color: $gray-darker;
+        font-style: normal;
+    }
+}
+
+
+// Page header
+// -------------------------
+
+.page-header {
+    padding-bottom: ($font-size-base - 1);
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+    margin-bottom: ($font-size-base);
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+// Description Lists
+dl {
+    margin-top: 0; // Remove browser default
+    margin-bottom: $font-size-base;
+}
+
+// Blockquotes
+blockquote {
+    padding: ($line-height-computed/ 2) $line-height-computed;
+    margin: 0 0 $font-size-base;
+}
+
+// Addresses
+address {
+    margin-bottom: $font-size-base;
+}
+
+// Kickers
+// -------------------------
+
+.kicker {
+    text-transform: uppercase;
+    font-family: $font-family-condensed;
+    letter-spacing: $letter-spacing-wide;
+    margin-top: $font-size-base;
+    font-size: $font-size-large;
+}
+
+.kicker + * {
+    margin-top: 0;
+}

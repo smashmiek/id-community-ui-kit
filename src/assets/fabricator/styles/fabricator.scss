@@ -1,0 +1,57 @@
+/**
+ * Fabricator styles
+ * @author Luke Askew
+ * Class selectors are namespaced with "f-"
+ */
+
+$settings: (
+        theme: light,
+        accent: hsl(0, 0%, 46%),
+        menu-width: 14rem
+);
+
+@import 'partials/variables';
+@import 'partials/code';
+@import 'partials/color-chips';
+@import 'partials/controls';
+@import 'partials/item';
+@import 'partials/layout';
+@import 'partials/menu';
+
+@import "../../toolkit/styles/_variables.scss";
+
+@mixin swatch($color, $name) {
+
+    .f-color-chip.#{$name} {
+        border-top-color: $color;
+    }
+
+}
+
+@include swatch($brand-id, brand-id);
+
+@include swatch($brand-atlas, brand-atlas);
+@include swatch($brand-profile, brand-profile);
+@include swatch($brand-forecast, brand-forecast);
+@include swatch($brand-economy, brand-economy);
+@include swatch($brand-housing, brand-housing);
+@include swatch($brand-health, brand-health);
+
+@include swatch($brand-atlas-dark, brand-atlas-dark);
+@include swatch($brand-profile-dark, brand-profile-dark);
+@include swatch($brand-forecast-dark, brand-forecast-dark);
+@include swatch($brand-economy-dark, brand-economy-dark);
+@include swatch($brand-housing-dark, brand-housing-dark);
+@include swatch($brand-health-dark, brand-health-dark);
+
+@include swatch($brand-info, brand-info);
+@include swatch($brand-warning, brand-warning);
+@include swatch($brand-success, brand-success);
+@include swatch($brand-danger, brand-danger);
+
+@include swatch($gray-base, gray-base);
+@include swatch($gray-darker, gray-darker);
+@include swatch($gray-dark, gray-dark);
+@include swatch($gray, gray);
+@include swatch($gray-light, gray-light);
+@include swatch($gray-lighter, gray-lighter);
