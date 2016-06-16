@@ -2,7 +2,8 @@
 ## Quick Start
 
 ```shell
-$ curl -L https://github.com/fbrctr/fabricator/archive/master.tar.gz | tar zx --strip 1
+$ npm i id-community-ui-kit
+$ cd node_modules/id-community-ui-kit/
 $ npm start
 ```
 
